@@ -1,3 +1,4 @@
+window.onload = function(){ 
 // Set constraints for the video stream
 var constraints = { video: { facingMode: "user" }, audio: false };
 // Define constants
@@ -26,4 +27,5 @@ cameraTrigger.onclick = function() {
     cameraOutput.classList.add("taken");
 };
 // Start the video stream when the window loads
+}
 window.addEventListener("load", cameraStart, false);
